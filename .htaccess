@@ -1,0 +1,11 @@
+# Turn on the Rewrite Engine
+RewriteEngine On
+
+# 1. Redirect external requests with .html to the clean URL (SEO friendly)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html\sHTTP [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 2. Internally map the clean URL back to the .html file so it loads
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]

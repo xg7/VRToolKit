@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Mirrored from cnetdev.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Oct 2026 02:58:09 GMT -->
+    <!-- Added by HTTrack -->
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <!-- /Added by HTTrack -->
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="/assets/index-aLh9SWlP.css" data-rsc-css-href="/assets/index-aLh9SWlP.css" data-precedence="vite-rsc/importer-resources"/>
+        <link rel="modulepreload" href="/assets/layout-segment-context-Ck4qxH4r.js" crossorigin=""/>
+        <link rel="modulepreload" href="/assets/rolldown-runtime-S-ySWqyJ.js" crossorigin=""/>
+        <link rel="modulepreload" href="/assets/index-4WoJkL-w.js" crossorigin=""/>
+        <link rel="modulepreload" href="/assets/framework-CXnKph_e.js" crossorigin=""/>
+        <link rel="modulepreload" href="/assets/app-navigation-Bi25E4Og.js" crossorigin=""/>
+        <link rel="modulepreload" href="/assets/link-BYPJCCj2.js" crossorigin=""/>
+        <link rel="modulepreload" href="/assets/troop-calculator-D3YIE-Y0.js" crossorigin=""/>
+        <title>Viking Rise Troop Calculator</title>
+        <meta name="description" content="Calculate troop training, healing, promotion costs, might, batches, and time for Viking Rise."/>
+        <meta property="og:title" content="Viking Rise Troop Calculator"/>
+        <meta property="og:description" content="Forge your army. Know the cost."/>
+        <meta property="og:image" content="og.png"/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:image:alt" content="Viking Rise Troop Calculator"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Viking Rise Troop Calculator"/>
+        <meta name="twitter:description" content="Forge your army. Know the cost."/>
+        <meta name="twitter:image" content="og.png"/>
+        <link rel="icon" href="favicon.svg"/>
+        <script>
+            self.__VINEXT_RSC_PARAMS__ = {}
+        </script>
+        <script>
+            self.__VINEXT_RSC_NAV__ = {
+                "pathname": "/",
+                "searchParams": []
+            }
+        </script>
+        <link rel="modulepreload" href="/assets/index-4WoJkL-w.js"/>
+    </head>
+    <body>
+        <a class="skip-link" href="#page-content">Skip to content</a>
+        <aside class="app-sidebar">
+            <a href="index.html" class="app-brand">
+                <span class="rune" aria-hidden="true">ᚱ</span>
+                <span>
+                    VIKING RISE<small>PLAYER TOOLS</small>
+                </span>
+            </a>
+            <p class="nav-label">PLAYER TOOLS</p>
+            <nav aria-label="Main navigation">
+                <a href="index.html" aria-current="page">
+                    <span aria-hidden="true">⚔</span>
+                    <span>
+                        <b>Troops</b>
+                        <small>Train, heal &amp; promote</small>
+                    </span>
+                </a>
+                <a href="buildings.html">
+                    <span aria-hidden="true">♜</span>
+                    <span>
+                        <b>Buildings</b>
+                        <small>Upgrade costs &amp; time</small>
+                    </span>
+                </a>
+                <a href="research.html">
+                    <span aria-hidden="true">⌘</span>
+                    <span>
+                        <b>Research</b>
+                        <small>Academy costs &amp; time</small>
+                    </span>
+                </a>
+                <a href="formations.html">
+                    <span aria-hidden="true">⚒</span>
+                    <span>
+                        <b>Formations</b>
+                        <small>Pair heroes &amp; skills</small>
+                    </span>
+                </a>
+                <a href="jewels.html">
+                    <span aria-hidden="true">◆</span>
+                    <span>
+                        <b>Jewel Builder</b>
+                        <small>Plan attributes &amp; skills</small>
+                    </span>
+                </a>
+                <a href="buffs.html">
+                    <span aria-hidden="true">✦</span>
+                    <span>
+                        <b>Buff Finder</b>
+                        <small>Trace battle bonuses</small>
+                    </span>
+                </a>
+                <a href="kvk.html">
+                    <span aria-hidden="true">⚑</span>
+                    <span>
+                        <b>KvK</b>
+                        <small>Seasons &amp; battle guides</small>
+                    </span>
+                </a>
+                <a href="docs.html">
+                    <span aria-hidden="true">☷</span>
+                    <span>
+                        <b>Guide</b>
+                        <small>Using the calculators</small>
+                    </span>
+                </a>
+            </nav>
+            <p class="sidebar-note">
+                Plan your upgrades.<br/>Make every resource count.
+            </p>
+        </aside>
+        <header class="mobile-navigation">
+            <a href="index.html" class="mobile-brand">
+                VIKING RISE <small>Troops</small>
+            </a>
+            <details>
+                <summary aria-label="Navigation menu">
+                    ☰ <span>Menu</span>
+                </summary>
+                <nav aria-label="Main navigation">
+                    <a href="index.html" aria-current="page">
+                        <span aria-hidden="true">⚔</span>
+                        <span>
+                            <b>Troops</b>
+                            <small>Train, heal &amp; promote</small>
+                        </span>
+                    </a>
+                    <a href="buildings.html">
+                        <span aria-hidden="true">♜</span>
+                        <span>
+                            <b>Buildings</b>
+                            <small>Upgrade costs &amp; time</small>
+                        </span>
+                    </a>
+                    <a href="research.html">
+                        <span aria-hidden="true">⌘</span>
+                        <span>
+                            <b>Research</b>
+                            <small>Academy costs &amp; time</small>
+                        </span>
+                    </a>
+                    <a href="formations.html">
+                        <span aria-hidden="true">⚒</span>
+                        <span>
+                            <b>Formations</b>
+                            <small>Pair heroes &amp; skills</small>
+                        </span>
+                    </a>
+                    <a href="jewels.html">
+                        <span aria-hidden="true">◆</span>
+                        <span>
+                            <b>Jewel Builder</b>
+                            <small>Plan attributes &amp; skills</small>
+                        </span>
+                    </a>
+                    <a href="buffs.html">
+                        <span aria-hidden="true">✦</span>
+                        <span>
+                            <b>Buff Finder</b>
+                            <small>Trace battle bonuses</small>
+                        </span>
+                    </a>
+                    <a href="kvk.html">
+                        <span aria-hidden="true">⚑</span>
+                        <span>
+                            <b>KvK</b>
+                            <small>Seasons &amp; battle guides</small>
+                        </span>
+                    </a>
+                    <a href="docs.html">
+                        <span aria-hidden="true">☷</span>
+                        <span>
+                            <b>Guide</b>
+                            <small>Using the calculators</small>
+                        </span>
+                    </a>
+                </nav>
+            </details>
+        </header>
+        <div class="app-content" id="page-content" tabindex="-1">
+            <main class="troops-page">
+                <header class="tool-heading">
+                    <span class="section-label">ARMY PLANNING</span>
+                    <h1>
+                        Troop <em>calculator</em>
+                    </h1>
+                    <p>Plan training, healing, or promotion costs, then check your inventory and speedups.</p>
+                    <a class="tool-jump" href="#troop-results">View totals ↓</a>
+                </header>
+                <nav class="calculator-help" aria-label="Calculator help">
+                    <button type="button">
+                        <span>?</span>
+                        How to use
+                    </button>
+                    <a href="docs.html">
+                        Full guide <span aria-hidden="true">→</span>
+                    </a>
+                </nav>
+                <section class="calculator" id="calculator">
+                    <div class="mode-tabs" role="group" aria-label="Calculation type">
+                        <button class="active" aria-pressed="true">
+                            <span>⚔</span>
+                            Train
+                        </button>
+                        <button class="" aria-pressed="false">
+                            <span>✦</span>
+                            Heal
+                        </button>
+                        <button class="" aria-pressed="false">
+                            <span>↑</span>
+                            Promote
+                        </button>
+                    </div>
+                    <div class="tier-picker">
+                        <span class="section-label">TROOP TIER</span>
+                        <div class="tiers">
+                            <button aria-pressed="false" class="">T1</button>
+                            <button aria-pressed="false" class="">T2</button>
+                            <button aria-pressed="false" class="">T3</button>
+                            <button aria-pressed="false" class="">T4</button>
+                            <button aria-pressed="false" class="">T5</button>
+                            <button aria-pressed="false" class="">T6</button>
+                            <button aria-pressed="true" class="active">T7</button>
+                            <button aria-pressed="false" class="">T8</button>
+                            <button aria-pressed="false" class="">T9</button>
+                            <button aria-pressed="false" class="">T10</button>
+                        </div>
+                    </div>
+                    <div class="workspace">
+                        <div class="inputs-panel" id="troop-inputs">
+                            <h2>Plan your troops</h2>
+                            <p>Set a troop target, then apply the bonuses and batch size available in your city.</p>
+                            <label class="field">
+                                <span>Number of troops</span>
+                                <div class="input-wrap">
+                                    <input type="number" inputMode="numeric" step="1" min="0" placeholder="0" value=""/>
+                                    <b></b>
+                                </div>
+                                <small>Troops to include in this plan</small>
+                            </label>
+                            <div class="field-row">
+                                <label class="field">
+                                    <span>Training speed</span>
+                                    <div class="input-wrap">
+                                        <input type="number" inputMode="decimal" step="any" min="0" placeholder="0" value="0"/>
+                                        <b>%</b>
+                                    </div>
+                                    <small>Combined speed bonus for this activity</small>
+                                </label>
+                                <label class="field">
+                                    <span>Resource reduction</span>
+                                    <div class="input-wrap">
+                                        <input type="number" inputMode="decimal" step="any" min="0" max="100" placeholder="0" value="0"/>
+                                        <b>%</b>
+                                    </div>
+                                    <small>Percentage saved on resource costs</small>
+                                </label>
+                            </div>
+                            <label class="field">
+                                <span>Training capacity</span>
+                                <div class="input-wrap">
+                                    <input type="number" inputMode="numeric" step="1" min="1" placeholder="0" value="4000"/>
+                                    <b></b>
+                                </div>
+                                <small>Default 4,000 at City Hall 25</small>
+                            </label>
+                            <div class="batch-callout">
+                                <span>⌘</span>
+                                <div>
+                                    <b>0<!-- --> <!-- -->batches<!-- --> required</b>
+                                    <small>4,000<!-- --> troops per batch</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results-panel" id="troop-results" tabindex="-1" aria-live="polite">
+                            <a class="tool-jump" href="#troop-inputs">↑ Edit troop inputs</a>
+                            <div class="results-heading">
+                                <div>
+                                    <span class="section-label">YOUR TOTALS</span>
+                                    <h2>
+                                        Ready to 
+                                        <!-- -->
+                                        train
+                                        <!-- -->
+                                        <strong>T7</strong>
+                                    </h2>
+                                </div>
+                                <div class="result-actions">
+                                    <button type="button">Copy plan</button>
+                                    <span class="shield">V</span>
+                                </div>
+                            </div>
+                            <div class="resources">
+                                <div class="resource-card">
+                                    <span class="resource-image" style="background-image:url(resources/food.png)" aria-hidden="true"></span>
+                                    <div>
+                                        <small>Food</small>
+                                        <b>0</b>
+                                        <em>0</em>
+                                    </div>
+                                </div>
+                                <div class="resource-card">
+                                    <span class="resource-image" style="background-image:url(resources/wood.png)" aria-hidden="true"></span>
+                                    <div>
+                                        <small>Wood</small>
+                                        <b>0</b>
+                                        <em>0</em>
+                                    </div>
+                                </div>
+                                <div class="resource-card">
+                                    <span class="resource-image" style="background-image:url(resources/stone.png)" aria-hidden="true"></span>
+                                    <div>
+                                        <small>Stone</small>
+                                        <b>0</b>
+                                        <em>0</em>
+                                    </div>
+                                </div>
+                                <div class="resource-card">
+                                    <span class="resource-image" style="background-image:url(resources/gold.png)" aria-hidden="true"></span>
+                                    <div>
+                                        <small>Gold</small>
+                                        <b>0</b>
+                                        <em>0</em>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-grid">
+                                <div>
+                                    <span class="stat-image might-image" aria-hidden="true"></span>
+                                    <small>TOTAL MIGHT</small>
+                                    <b>+<!-- -->0</b>
+                                    <em>0<!-- --> power</em>
+                                </div>
+                                <div>
+                                    <span class="stat-image original-time-image" aria-hidden="true"></span>
+                                    <small>ORIGINAL TIME</small>
+                                    <b>0s</b>
+                                    <em>Without speed bonus</em>
+                                </div>
+                                <div class="highlight">
+                                    <span class="stat-image estimated-time-image" aria-hidden="true"></span>
+                                    <small>ESTIMATED TIME</small>
+                                    <b>0s</b>
+                                    <em>With +<!-- -->0<!-- -->% speed</em>
+                                </div>
+                                <div>
+                                    <span class="stat-image batches-image" aria-hidden="true"></span>
+                                    <small>TOTAL BATCHES</small>
+                                    <b>0</b>
+                                    <em>At <!-- -->4,000<!-- --> capacity</em>
+                                </div>
+                            </div>
+                            <div class="saved">
+                                <span class="saved-image" aria-hidden="true"></span>
+                                <div>
+                                    <small>TIME SAVED BY YOUR BONUS</small>
+                                    <b>0s</b>
+                                </div>
+                                <em>No bonus</em>
+                            </div>
+                        </div>
+                    </div>
+                    <details class="planner">
+                        <summary>
+                            <span>
+                                <b>Inventory &amp; speedup planner</b>
+                                <small>Compare your stockpile with the plan and estimate the remaining wait</small>
+                            </span>
+                            <em>Optional</em>
+                        </summary>
+                        <div class="planner-body">
+                            <section>
+                                <div class="planner-heading">
+                                    <span class="section-label">AVAILABLE RESOURCES</span>
+                                    <button type="button">Clear</button>
+                                </div>
+                                <div class="planner-resource-grid">
+                                    <label class="planner-field">
+                                        <span>Food</span>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="Not entered" value=""/>
+                                    </label>
+                                    <label class="planner-field">
+                                        <span>Wood</span>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="Not entered" value=""/>
+                                    </label>
+                                    <label class="planner-field">
+                                        <span>Stone</span>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="Not entered" value=""/>
+                                    </label>
+                                    <label class="planner-field">
+                                        <span>Gold</span>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="Not entered" value=""/>
+                                    </label>
+                                </div>
+                                <div class="shortfall-grid">
+                                    <div class="unknown">
+                                        <small>Food</small>
+                                        <b>Not entered</b>
+                                    </div>
+                                    <div class="unknown">
+                                        <small>Wood</small>
+                                        <b>Not entered</b>
+                                    </div>
+                                    <div class="unknown">
+                                        <small>Stone</small>
+                                        <b>Not entered</b>
+                                    </div>
+                                    <div class="unknown">
+                                        <small>Gold</small>
+                                        <b>Not entered</b>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <span class="section-label">AVAILABLE SPEEDUPS</span>
+                                <fieldset class="speedup-fields">
+                                    <legend>General speedups</legend>
+                                    <label>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="0" value=""/>
+                                        <span>d</span>
+                                    </label>
+                                    <label>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="0" value=""/>
+                                        <span>h</span>
+                                    </label>
+                                    <label>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="0" value=""/>
+                                        <span>m</span>
+                                    </label>
+                                </fieldset>
+                                <fieldset class="speedup-fields">
+                                    <legend>Training speedups</legend>
+                                    <label>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="0" value=""/>
+                                        <span>d</span>
+                                    </label>
+                                    <label>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="0" value=""/>
+                                        <span>h</span>
+                                    </label>
+                                    <label>
+                                        <input type="number" inputMode="numeric" min="0" placeholder="0" value=""/>
+                                        <span>m</span>
+                                    </label>
+                                </fieldset>
+                                <div class="planner-summary">
+                                    <div>
+                                        <small>MAXIMUM POSSIBLE</small>
+                                        <b>Enter inventory</b>
+                                        <em>Based only on balances entered above</em>
+                                    </div>
+                                    <div>
+                                        <small>SPEEDUPS AVAILABLE</small>
+                                        <b>Not entered</b>
+                                        <em>General + matching activity speedups</em>
+                                    </div>
+                                    <div>
+                                        <small>EXPECTED COMPLETION</small>
+                                        <b>Add troops</b>
+                                        <em>Without using speedups</em>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </details>
+                </section>
+                <footer>
+                    <span>ᚱ</span>
+                    K678 - [IFAM] Family Above Might <span>ᚱ</span>
+                </footer>
+            </main>
+        </div>
+        <details class="support-widget">
+            <summary aria-label="Support this project">
+                <span aria-hidden="true">☕</span>
+                <b>Support the Project</b>
+            </summary>
+            <div class="support-panel">
+                <div class="support-heading">
+                    <span aria-hidden="true">ᚱ</span>
+                    <div>
+                        <small>SUPPORT THE PROJECT</small>
+                        <h2>Buy me a coffee</h2>
+                    </div>
+                </div>
+                <p>If this calculator helps your Viking Rise journey, you can support my hobby projects with a coffee.</p>
+                <a class="support-qr" href="https://buymeacoffee.com/twix678" target="_blank" rel="noreferrer" aria-label="Open Twix678 on Buy Me a Coffee">
+                    <span role="img" aria-label="QR code for Buy Me a Coffee"></span>
+                </a>
+                <a class="support-link" href="https://buymeacoffee.com/twix678" target="_blank" rel="noreferrer">
+                    Buy me a coffee <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </details>
+        <script id="_R_">
+            import("./assets/index-4WoJkL-w.js")
+        </script>
+    </body>
+    <!-- Mirrored from cnetdev.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Oct 2026 02:58:28 GMT -->
+</html>
+<script>
+    self.__VINEXT_RSC_CHUNKS__ = self.__VINEXT_RSC_CHUNKS__ || [];
+    self.__VINEXT_RSC_CHUNKS__.push("2:I[\"c1cfe4a1990b\",[],\"AppNavigation\",1]\n3:I[\"8c0f216c4604\",[],\"Children\",1]\n4:I[\"15c18cfaeeff\",[],\"LayoutSegmentProvider\",1]\n5:I[\"8c0f216c4604\",[],\"Slot\",1]\n6:I[\"593f344dc510\",[],\"RedirectBoundary\",1]\n:HL[\"/assets/index-aLh9SWlP.css\",\"style\"]\n")
+</script>
+<script>
+    self.__VINEXT_RSC_CHUNKS__ = self.__VINEXT_RSC_CHUNKS__ || [];
+    self.__VINEXT_RSC_CHUNKS__.push("0:{\"__route\":\"route:/\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"page:/\":\"$L1\",\"layout:/\":[[[[\"$\",\"link\",\"css:/assets/index-aLh9SWlP.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"/assets/index-aLh9SWlP.css\",\"data-rsc-css-href\":\"/assets/index-aLh9SWlP.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"div\",null,{\"className\":\"app-content\",\"id\":\"page-content\",\"tabIndex\":-1,\"children\":[\"$\",\"$L3\",null,{}]}],[\"$\",\"details\",null,{\"className\":\"support-widget\",\"children\":[[\"$\",\"summary\",null,{\"aria-label\":\"Support this project\",\"children\":[[\"$\",\"span\",null,{\"aria-hidden\":\"true\",\"children\":\"☕\"}],[\"$\",\"b\",null,{\"children\":\"Support the Project\"}]]}],[\"$\",\"div\",null,{\"className\":\"support-panel\",\"children\":[[\"$\",\"div\",null,{\"className\":\"support-heading\",\"children\":[[\"$\",\"span\",null,{\"aria-hidden\":\"true\",\"children\":\"ᚱ\"}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"small\",null,{\"children\":\"SUPPORT THE PROJECT\"}],[\"$\",\"h2\",null,{\"children\":\"Buy me a coffee\"}]]}]]}],[\"$\",\"p\",null,{\"children\":\"If this calculator helps your Viking Rise journey, you can support my hobby projects with a coffee.\"}],[\"$\",\"a\",null,{\"className\":\"support-qr\",\"href\":\"https://buymeacoffee.com/twix678\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"aria-label\":\"Open Twix678 on Buy Me a Coffee\",\"children\":[\"$\",\"span\",null,{\"role\":\"img\",\"aria-label\":\"QR code for Buy Me a Coffee\"}]}],[\"$\",\"a\",null,{\"className\":\"support-link\",\"href\":\"https://buymeacoffee.com/twix678\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"children\":[\"Buy me a coffee \",[\"$\",\"span\",null,{\"aria-hidden\":\"true\",\"children\":\"→\"}]]}]]}]]}]]}]}]],null],\"route:/\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"Viking Rise Troop Calculator\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Calculate troop training, healing, promotion costs, might, batches, and time for Viking Rise.\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"Viking Rise Troop Calculator\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"Forge your army. Know the cost.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:image\",\"content\":\"/og.png\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image:alt\",\"content\":\"Viking Rise Troop Calculator\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:title\",\"content\":\"Viking Rise Troop Calculator\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:description\",\"content\":\"Forge your army. Know the cost.\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:image\",\"content\":\"/og.png\"}],[\"$\",\"link\",\"12\",{\"rel\":\"icon\",\"href\":\"/favicon.svg\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L4\",null,{\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L5\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L6\",null,{\"children\":[\"$\",\"$L4\",null,{\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L5\",null,{\"id\":\"page:/\"}]}]}]}]}]],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:4uhn5s1wvoptc\",\"deploymentVersion\":\"46f800d9-3de1-4835-8047-fb2ab131173e\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null}}\n")
+</script>
+<script>
+    self.__VINEXT_RSC_CHUNKS__ = self.__VINEXT_RSC_CHUNKS__ || [];
+    self.__VINEXT_RSC_CHUNKS__.push("7:I[\"0b4fbe5b8c87\",[],\"TroopCalculator\",1]\n")
+</script>
+<script>
+    self.__VINEXT_RSC_CHUNKS__ = self.__VINEXT_RSC_CHUNKS__ || [];
+    self.__VINEXT_RSC_CHUNKS__.push("1:[\"$\",\"$L7\",null,{\"config\":{\"defaultCapacity\":4000,\"train\":[{\"label\":\"T1\",\"resources\":{\"food\":40,\"wood\":40,\"stone\":0,\"gold\":0},\"might\":1,\"seconds\":15},{\"label\":\"T2\",\"resources\":{\"food\":65,\"wood\":65,\"stone\":50,\"gold\":0},\"might\":2,\"seconds\":30},{\"label\":\"T3\",\"resources\":{\"food\":115,\"wood\":115,\"stone\":85,\"gold\":15},\"might\":4,\"seconds\":45},{\"label\":\"T4\",\"resources\":{\"food\":165,\"wood\":165,\"stone\":125,\"gold\":20},\"might\":5,\"seconds\":70},{\"label\":\"T5\",\"resources\":{\"food\":300,\"wood\":300,\"stone\":150,\"gold\":50},\"might\":7,\"seconds\":95},{\"label\":\"T6\",\"resources\":{\"food\":400,\"wood\":400,\"stone\":300,\"gold\":150},\"might\":9,\"seconds\":115},{\"label\":\"T7\",\"resources\":{\"food\":600,\"wood\":600,\"stone\":450,\"gold\":500},\"might\":13,\"seconds\":180},{\"label\":\"T8\",\"resources\":{\"food\":600,\"wood\":600,\"stone\":450,\"gold\":500},\"might\":14,\"seconds\":185},{\"label\":\"T9\",\"resources\":{\"food\":600,\"wood\":600,\"stone\":450,\"gold\":500},\"might\":16,\"seconds\":195},{\"label\":\"T10\",\"resources\":{\"food\":600,\"wood\":600,\"stone\":450,\"gold\":500},\"might\":18,\"seconds\":220}],\"heal\":[{\"label\":\"T1\",\"resources\":{\"food\":15,\"wood\":15,\"stone\":0,\"gold\":0},\"might\":1,\"seconds\":2},{\"label\":\"T2\",\"resources\":{\"food\":25,\"wood\":25,\"stone\":15,\"gold\":0},\"might\":2,\"seconds\":2},{\"label\":\"T3\",\"resources\":{\"food\":45,\"wood\":45,\"stone\":25,\"gold\":4},\"might\":4,\"seconds\":2},{\"label\":\"T4\",\"resources\":{\"food\":55,\"wood\":55,\"stone\":40,\"gold\":6},\"might\":5,\"seconds\":3},{\"label\":\"T5\",\"resources\":{\"food\":75,\"wood\":75,\"stone\":60,\"gold\":15},\"might\":7,\"seconds\":3},{\"label\":\"T6\",\"resources\":{\"food\":90,\"wood\":90,\"stone\":90,\"gold\":45},\"might\":9,\"seconds\":4},{\"label\":\"T7\",\"resources\":{\"food\":120,\"wood\":120,\"stone\":120,\"gold\":150},\"might\":13,\"seconds\":5},{\"label\":\"T8\",\"resources\":{\"food\":120,\"wood\":120,\"stone\":120,\"gold\":150},\"might\":14,\"seconds\":5},{\"label\":\"T9\",\"resources\":{\"food\":120,\"wood\":120,\"stone\":120,\"gold\":150},\"might\":16,\"seconds\":5},{\"label\":\"T10\",\"resources\":{\"food\":120,\"wood\":120,\"stone\":120,\"gold\":150},\"might\":18,\"seconds\":5}],\"promote\":[{\"label\":\"T1 → T2\",\"from\":1,\"to\":2,\"resources\":{\"food\":25,\"wood\":25,\"stone\":50,\"gold\":0},\"might\":1,\"seconds\":15},{\"label\":\"T1 → T3\",\"from\":1,\"to\":3,\"resources\":{\"food\":75,\"wood\":75,\"stone\":85,\"gold\":15},\"might\":3,\"seconds\":30},{\"label\":\"T1 → T4\",\"from\":1,\"to\":4,\"resources\":{\"food\":125,\"wood\":125,\"stone\":125,\"gold\":20},\"might\":4,\"seconds\":55},{\"label\":\"T1 → T5\",\"from\":1,\"to\":5,\"resources\":{\"food\":260,\"wood\":260,\"stone\":150,\"gold\":50},\"might\":6,\"seconds\":80},{\"label\":\"T1 → T6\",\"from\":1,\"to\":6,\"resources\":{\"food\":360,\"wood\":360,\"stone\":300,\"gold\":150},\"might\":8,\"seconds\":100},{\"label\":\"T1 → T7\",\"from\":1,\"to\":7,\"resources\":{\"food\":560,\"wood\":560,\"stone\":450,\"gold\":500},\"might\":12,\"seconds\":165},{\"label\":\"T1 → T8\",\"from\":1,\"to\":8,\"resources\":{\"food\":560,\"wood\":560,\"stone\":450,\"gold\":500},\"might\":13,\"seconds\":170},{\"label\":\"T1 → T9\",\"from\":1,\"to\":9,\"resources\":{\"food\":560,\"wood\":560,\"stone\":450,\"gold\":500},\"might\":15,\"seconds\":180},{\"label\":\"T1 → T10\",\"from\":1,\"to\":10,\"resources\":{\"food\":560,\"wood\":560,\"stone\":450,\"gold\":500},\"might\":17,\"seconds\":205},{\"label\":\"T2 → T3\",\"from\":2,\"to\":3,\"resources\":{\"food\":50,\"wood\":50,\"stone\":35,\"gold\":15},\"might\":2,\"seconds\":15},{\"label\":\"T2 → T4\",\"from\":2,\"to\":4,\"resources\":{\"food\":100,\"wood\":100,\"stone\":75,\"gold\":20},\"might\":3,\"seconds\":40},{\"label\":\"T2 → T5\",\"from\":2,\"to\":5,\"resources\":{\"food\":235,\"wood\":235,\"stone\":100,\"gold\":50},\"might\":5,\"seconds\":65},{\"label\":\"T2 → T6\",\"from\":2,\"to\":6,\"resources\":{\"food\":335,\"wood\":335,\"stone\":250,\"gold\":150},\"might\":7,\"seconds\":85},{\"label\":\"T2 → T7\",\"from\":2,\"to\":7,\"resources\":{\"food\":535,\"wood\":535,\"stone\":400,\"gold\":500},\"might\":11,\"seconds\":150},{\"label\":\"T2 → T8\",\"from\":2,\"to\":8,\"resources\":{\"food\":535,\"wood\":535,\"stone\":400,\"gold\":500},\"might\":12,\"seconds\":155},{\"label\":\"T2 → T9\",\"from\":2,\"to\":9,\"resources\":{\"food\":535,\"wood\":535,\"stone\":400,\"gold\":500},\"might\":14,\"seconds\":165},{\"label\":\"T2 → T10\",\"from\":2,\"to\":10,\"resources\":{\"food\":535,\"wood\":535,\"stone\":400,\"gold\":500},\"might\":16,\"seconds\":190},{\"label\":\"T3 → T4\",\"from\":3,\"to\":4,\"resources\":{\"food\":50,\"wood\":50,\"stone\":40,\"gold\":5},\"might\":1,\"seconds\":25},{\"label\":\"T3 → T5\",\"from\":3,\"to\":5,\"resources\":{\"food\":185,\"wood\":185,\"stone\":65,\"gold\":35},\"might\":3,\"seconds\":50},{\"label\":\"T3 → T6\",\"from\":3,\"to\":6,\"resources\":{\"food\":285,\"wood\":285,\"stone\":215,\"gold\":135},\"might\":5,\"seconds\":70},{\"label\":\"T3 → T7\",\"from\":3,\"to\":7,\"resources\":{\"food\":485,\"wood\":485,\"stone\":365,\"gold\":485},\"might\":9,\"seconds\":135},{\"label\":\"T3 → T8\",\"from\":3,\"to\":8,\"resources\":{\"food\":485,\"wood\":485,\"stone\":365,\"gold\":485},\"might\":10,\"seconds\":140},{\"label\":\"T3 → T9\",\"from\":3,\"to\":9,\"resources\":{\"food\":485,\"wood\":485,\"stone\":365,\"gold\":485},\"might\":12,\"seconds\":150},{\"label\":\"T3 → T10\",\"from\":3,\"to\":10,\"resources\":{\"food\":485,\"wood\":485,\"stone\":365,\"gold\":485},\"might\":14,\"seconds\":175},{\"label\":\"T4 → T5\",\"from\":4,\"to\":5,\"resources\":{\"food\":135,\"wood\":135,\"stone\":25,\"gold\":30},\"might\":2,\"seconds\":25},{\"label\":\"T4 → T6\",\"from\":4,\"to\":6,\"resources\":{\"food\":235,\"wood\":235,\"stone\":175,\"gold\":130},\"might\":4,\"seconds\":45},{\"label\":\"T4 → T7\",\"from\":4,\"to\":7,\"resources\":{\"food\":435,\"wood\":435,\"stone\":325,\"gold\":480},\"might\":8,\"seconds\":110},{\"label\":\"T4 → T8\",\"from\":4,\"to\":8,\"resources\":{\"food\":435,\"wood\":435,\"stone\":325,\"gold\":480},\"might\":9,\"seconds\":115},{\"label\":\"T4 → T9\",\"from\":4,\"to\":9,\"resources\":{\"food\":435,\"wood\":435,\"stone\":325,\"gold\":480},\"might\":11,\"seconds\":125},{\"label\":\"T4 → T10\",\"from\":4,\"to\":10,\"resources\":{\"food\":435,\"wood\":435,\"stone\":325,\"gold\":480},\"might\":13,\"seconds\":150},{\"label\":\"T5 → T6\",\"from\":5,\"to\":6,\"resources\":{\"food\":100,\"wood\":100,\"stone\":150,\"gold\":100},\"might\":2,\"seconds\":20},{\"label\":\"T5 → T7\",\"from\":5,\"to\":7,\"resources\":{\"food\":300,\"wood\":300,\"stone\":300,\"gold\":450},\"might\":6,\"seconds\":85},{\"label\":\"T5 → T8\",\"from\":5,\"to\":8,\"resources\":{\"food\":300,\"wood\":300,\"stone\":300,\"gold\":450},\"might\":7,\"seconds\":90},{\"label\":\"T5 → T9\",\"from\":5,\"to\":9,\"resources\":{\"food\":300,\"wood\":300,\"stone\":300,\"gold\":450},\"might\":9,\"seconds\":100},{\"label\":\"T5 → T10\",\"from\":5,\"to\":10,\"resources\":{\"food\":300,\"wood\":300,\"stone\":300,\"gold\":450},\"might\":11,\"seconds\":125},{\"label\":\"T6 → T7\",\"from\":6,\"to\":7,\"resources\":{\"food\":200,\"wood\":200,\"stone\":150,\"gold\":350},\"might\":4,\"seconds\":65},{\"label\":\"T6 → T8\",\"from\":6,\"to\":8,\"resources\":{\"food\":200,\"wood\":200,\"stone\":150,\"gold\":350},\"might\":5,\"seconds\":70},{\"label\":\"T6 → T9\",\"from\":6,\"to\":9,\"resources\":{\"food\":200,\"wood\":200,\"stone\":150,\"gold\":350},\"might\":7,\"seconds\":80},{\"label\":\"T6 → T10\",\"from\":6,\"to\":10,\"resources\":{\"food\":200,\"wood\":200,\"stone\":150,\"gold\":350},\"might\":9,\"seconds\":105},{\"label\":\"T7 → T8\",\"from\":7,\"to\":8,\"resources\":{\"food\":0,\"wood\":0,\"stone\":0,\"gold\":0},\"might\":1,\"seconds\":5},{\"label\":\"T7 → T9\",\"from\":7,\"to\":9,\"resources\":{\"food\":0,\"wood\":0,\"stone\":0,\"gold\":0},\"might\":3,\"seconds\":15},{\"label\":\"T7 → T10\",\"from\":7,\"to\":10,\"resources\":{\"food\":0,\"wood\":0,\"stone\":0,\"gold\":0},\"might\":5,\"seconds\":40},{\"label\":\"T8 → T9\",\"from\":8,\"to\":9,\"resources\":{\"food\":0,\"wood\":0,\"stone\":0,\"gold\":0},\"might\":2,\"seconds\":10},{\"label\":\"T8 → T10\",\"from\":8,\"to\":10,\"resources\":{\"food\":0,\"wood\":0,\"stone\":0,\"gold\":0},\"might\":4,\"seconds\":35},{\"label\":\"T9 → T10\",\"from\":9,\"to\":10,\"resources\":{\"food\":0,\"wood\":0,\"stone\":0,\"gold\":0},\"might\":2,\"seconds\":25}]}}]\n")
+</script>
+<script>
+    self.__VINEXT_RSC_DONE__ = true
+</script>
